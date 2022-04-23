@@ -1,0 +1,72 @@
+
+some numpy method and attribute
+
+***** Attribute & Function *****
+-np.argmax(arr,axis) # return index num where the maximum value is exists
+-np.argmin(arr,axis) # return index num where the minimum value is exists
+-np.amin(arr) # return the minimum value from the array or matrix
+-np.amax(arr) # return the maximum value from the array or matrix
+-np.min() or arr.min() # return the minimum value from the array or matrix
+-np.max() or arr.max() # return the maximum value from the array or matrix
+-np.exp(arr) # return the exponential of all elements of input array
+-arr.item(8) # item(index_num) to see the value
+-arr.ndim # return the number of dimension of the array
+-arr.size # return the array size or how many elements have in the array
+-arr.itemsize # return the each itemsize in bytes
+-arr.sum(axis=?) # sum all element and return the total. its depends on axis parameter
+-np.sum([arr1,arr2],axis=1) # you can multiple array use.
+-concatenate((arr,arr2)) # return array after join two array
+-concatenate((arr,arr2),axis) # for 2-d array
+-np.add(arr,b)
+-np.subtract(arr,b)
+-np.divide(arr,b)
+-np.multiply(arr,b)
+-np.mod(arr,2)
+-np.prod([arr,arr2])
+-np.prod([arr1, arr2], axis=1)
+-np.remainder(arr,2)
+-np.divmod(arr,2)
+-np.power(arr,2)
+-np.absolute(value or arr)
+-np.abs(arr)
+-np.unique(arr) # array must be 1-D. find unique value.
+-arr.reshape(dim,row-num,col-num)
+-arr.flatten() or arr.reshape(-1)
+-arr.flat
+-np.array_equal(arr1,arr2)
+-np.array_equiv(arr1,arr2)
+-np.transpose(arr)
+-arr.T
+-where(condition) # example np.where(arr%==2) return the index where the condition is match.
+-where(condition,arr1,arr2) # if condition is true then return arr1 value else return arr2 value.
+-searchsorted(arr,searching_value,side=?) # by default side="left" you can change side="right"
+-np.ravel(arr) # it returns a copy of array. this method flat or convert mulit-dim array into 1-d  array.
+-np.cumsum(arr,axis=?) # cumulative sum
+-np.cumproduct(arr,axis=?)
+-np.cumprod(arr,axis)
+-np.resize(arr,(3,4)) # its resize an one dimensional array and return 2D or 3D arr. @ resize(arr,(dimNum)).it not change the orginal array.
+-np.swapaxes(arr,axis=(1,2,3)) # you can give three axis if array is 3D. 2d-2 axis,1d-1 axis
+-np.insert(arr,index_num,value) # for 1-D array
+-np.insert(arr,[index_list],value or you can give [value_list]) # for 1-D
+-np.insert(arr,index_num,value,axis) # for 2-D array
+-np.append(arr,value) # it insert value on last index and it is for 1-D array
+-np.append(arr,[[value]],axis) # for 2-D array
+-np.delete(arr,index_num) # for 1d array
+-np.delete(arr,index_num,axis)
+-np.dot(matrix,matrix2) # for matrix multiplication
+-matrix @ matrix2 # it same as dot() method
+-np.linalg.inv(matrix or array) # for inverse of a matrix
+-np.linalg.matrix_power(matrix,value) # matrix power
+-np.linalg.matrix_rank(matrix) # matrix rank
+-np.linalg.det(matrix) # determanite of a matrix
+-np.random.randint(low=1,high=19,size=(2,3,3) # you can 1,2 or 3-d array make to change size value
+-np.random.choice([1,2,3,4,5],size=(3,5)
+-np.array_split(arr,partiation_num,axis)
+-np.sort(arr,axis) # axis your wish. axis=0->column wise and asix=1->row wise
+-np.argsort(arr) # it return the sort index
+-np.lexsort(arr,arr2)
+-np.diff(arr,n=?)
+-np.log2(arr)
+-np.log10(arr)
+-np.log()
+-np.identity(row or column num) # np.identity(3). it make an identity matrix.
